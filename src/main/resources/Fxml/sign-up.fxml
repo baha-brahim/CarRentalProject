@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="test" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrentalproject.Controllers.SignUpController">
+<stylesheets>
+    <URL value="@../Styles/log-in.css" />
+</stylesheets>
+<children>
+    <AnchorPane prefHeight="407.0" prefWidth="314.0" style="-fx-background-color: #5C95FF;">
+        <children>
+            <ImageView fitHeight="58.0" fitWidth="256.0" layoutX="22.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../Images/swift-ride.png" />
+                </image>
+            </ImageView>
+        </children>
+    </AnchorPane>
+    <ImageView fitHeight="407.0" fitWidth="314.0" opacity="0.22" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../Images/auth-image.jpg" />
+        </image>
+    </ImageView>
+    <AnchorPane layoutX="314.0" prefHeight="407.0" prefWidth="285.0" style="-fx-background-color: white;">
+        <children>
+            <TextField fx:id="nameField" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="23.0" layoutY="27.0" pickOnBounds="false" prefHeight="26.0" prefWidth="238.0" promptText="Your name " scaleShape="false" style="-fx-border-width: 1px 1px 2px 1px; -fx-border-color: white white #5C95FF white; -fx-border-radius: 0;" />
+            <TextField fx:id="userNameField" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="23.0" layoutY="79.0" pickOnBounds="false" prefHeight="26.0" prefWidth="238.0" promptText="Your user name" scaleShape="false" style="-fx-border-width: 1px 1px 2px 1px; -fx-border-color: white white #5C95FF white;">
+                <opaqueInsets>
+                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                </opaqueInsets>
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </TextField>
+            <Button fx:id="createAccountButton" layoutX="23.0" layoutY="314.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="238.0" style="-fx-background-color: white; -fx-border-color: #5C95FF;" text="Create account" textFill="#5c95ff">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </Button>
+            <Button fx:id="backToLoginPage" layoutX="23.0" layoutY="353.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="238.0" style="-fx-background-color: #5C95FF;" text="Back to login page" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </Button>
+            <TextField fx:id="passwordField" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="23.0" layoutY="127.0" pickOnBounds="false" prefHeight="26.0" prefWidth="238.0" promptText="Password" scaleShape="false" style="-fx-border-width: 1px 1px 2px 1px; -fx-border-color: white white #5C95FF white;">
+               <opaqueInsets>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="confirmPasswordField" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="23.0" layoutY="180.0" pickOnBounds="false" prefHeight="26.0" prefWidth="238.0" promptText="Confirm password" scaleShape="false" style="-fx-border-width: 1px 1px 2px 1px; -fx-border-color: white white #5C95FF white;">
+               <opaqueInsets>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="phoneNumberField" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="23.0" layoutY="233.0" pickOnBounds="false" prefHeight="26.0" prefWidth="238.0" promptText="Your phone number" scaleShape="false" style="-fx-border-width: 1px 1px 2px 1px; -fx-border-color: white white #5C95FF white;">
+               <opaqueInsets>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+        </children>
+    </AnchorPane>
+</children>
+</AnchorPane>

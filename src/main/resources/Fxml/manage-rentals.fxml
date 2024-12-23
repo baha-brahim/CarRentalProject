@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" spacing="20" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrentalproject.Controllers.ManageRentalsController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label styleClass="title" text="Manage the rentals"/>
+    <TableView fx:id="rentalTable" prefHeight="300.0" prefWidth="700.0">
+        <columns>
+            <TableColumn fx:id="rentalIdColumn" prefWidth="50" text="ID" />
+            <TableColumn fx:id="carIdColumn" prefWidth="50" text="Car ID" />
+            <TableColumn fx:id="clientIdColumn" prefWidth="50" text="Client ID" />
+            <TableColumn fx:id="rentalDateColumn" prefWidth="100" text="Rental Date" />
+            <TableColumn fx:id="returnDateColumn" prefWidth="100" text="Return Date" />
+            <TableColumn fx:id="totalCostColumn" prefWidth="80" text="Total Cost" />
+            <TableColumn fx:id="pickUpLocationColumn" prefWidth="120" text="Pick Up" />
+            <TableColumn fx:id="rentalStateColumn" prefWidth="80" text="State" />
+            <TableColumn fx:id="rentalActionColumn"  text="Actions"/>
+        </columns>
+    </TableView>
+    <Label fx:id="errorMessage" styleClass="error-text" />
+</VBox>

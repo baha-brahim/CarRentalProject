@@ -1,0 +1,92 @@
+/* General Styles */
+.root {
+    -fx-font-family: "Arial";
+    -fx-background-color: #ffffff; /* White background */
+}
+/* SIDEBAR STYLES */
+.sidebar {
+    -fx-background-color: #f0f0f0;
+}
+.sidebar-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-text-fill: #333;
+}
+
+/* Button styles */
+.side-btn {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #5c95ff; /* Blue color */
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+    -fx-min-width: 160px;
+    -fx-font-size: 16px;
+}
+.side-btn:hover {
+    -fx-background-color: #5c95ff;
+    -fx-text-fill: white;
+
+}
+.btn {
+    -fx-background-color: #5c95ff;
+    -fx-text-fill: white;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+}
+.btn:hover {
+    -fx-opacity: 0.9;
+}
+/* Table Styles */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color:  #dcdcdc;
+
+}
+.table-view:focused {
+    -fx-border-color:  #5c95ff;
+    -fx-background-color: transparent;
+}
+.table-column {
+    -fx-alignment: center;
+}
+.table-row-cell{
+    -fx-border-color: #e0e0e0;
+
+}
+.table-view .column-header {
+    -fx-background-color: #f0f0f0; /* light gray background*/
+    -fx-border-color: #dcdcdc;
+}
+/* FORM STYLES */
+.form-label {
+    -fx-font-weight: bold;
+    -fx-padding: 5px;
+    -fx-text-fill: #333;
+    -fx-font-size: 14px
+}
+
+.form-field {
+    -fx-padding: 8px;
+    -fx-border-radius: 5px;
+    -fx-border-color:  #dcdcdc;
+}
+.form-field:focused {
+    -fx-border-color:  #5c95ff;
+
+}
+
+/* TITLE */
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill:  #333;
+    -fx-padding: 10px
+}
+.error-text {
+    -fx-text-fill: #FF0000;
+    -fx-padding: 5px
+}

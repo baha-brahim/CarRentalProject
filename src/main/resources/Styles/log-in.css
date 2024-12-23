@@ -1,0 +1,12 @@
+.text-field {
+    -fx-background-color: -fx-control-inner-background;
+    -fx-text-fill: #5C95FF;
+    -fx-prompt-text-fill: #5C95FF;
+    -fx-font-weight: 200;
+}
+.combo-box {
+    -fx-background-color: -fx-control-inner-background;
+    -fx-text-fill: #5C95FF;
+    -fx-prompt-text-fill: #5C95FF;
+    -fx-font-weight: 200;
+}

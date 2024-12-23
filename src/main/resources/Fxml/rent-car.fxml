@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="256.0" minWidth="579.0" prefHeight="330.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrentalproject.Controllers.RegistrationFormController">
+   <stylesheets>
+      <URL value="@../Styles/log-in.css" />
+   </stylesheets>
+   <children>
+      <GridPane fx:id="formGrid" alignment="CENTER" hgap="10.0" layoutX="346.0" minHeight="194.0" minWidth="255.0" prefHeight="256.0" prefWidth="300.0" vgap="8">
+         <padding>
+            <Insets bottom="20" left="20" right="20" top="20" />
+         </padding>
+         <TextField fx:id="expDateField" disable="true" opacity="0.0" prefHeight="26.0" prefWidth="89.0" promptText="Expiration date" style="-fx-border-width: 0 0 1 0; -fx-border-color: #5C95FF; -fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         <TextField fx:id="cardNameField" disable="true" opacity="0.0" promptText="Cardholder's name" style="-fx-border-width: 0 0 1 0; -fx-border-color: #5C95FF; -fx-background-color: white;" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="4" />
+         <DatePicker fx:id="returnDateField" cacheShape="false" centerShape="false" focusTraversable="false" prefHeight="29.0" prefWidth="220.0" promptText="Return date" scaleShape="false" style="-fx-border-width: 0 0 1 0; -fx-border-color: #5C95FF; -fx-background-color: white;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+         <TextField fx:id="cardNumberField" cacheShape="false" centerShape="false" disable="true" focusTraversable="false" opacity="0.0" promptText="Card number" scaleShape="false" style="-fx-border-width: 0 0 1 0; -fx-border-color: #5C95FF; -fx-background-color: white;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+         <DatePicker fx:id="pickUpDateField" cacheShape="false" centerShape="false" focusTraversable="false" prefHeight="29.0" prefWidth="224.0" promptText="Pick up date" scaleShape="false" style="-fx-border-width: 0 0 1 0; -fx-border-color: #5C95FF; -fx-background-color: white;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+         <Button fx:id="backButton2" mnemonicParsing="false" opacity="0.0" prefHeight="26.0" prefWidth="108.0" style="-fx-background-color: #5C95FF; -fx-text-fill: white; -fx-background-radius: 3;" text="Back" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+         <RadioButton fx:id="payOnPickUpRadioButton" mnemonicParsing="false" text="Pay on pickup" textFill="#5c95ff" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="10" />
+         <TextField fx:id="cvcField" cacheShape="false" centerShape="false" disable="true" focusTraversable="false" opacity="0.0" promptText="CVC" scaleShape="false" style="-fx-border-width: 0 0 1 0; -fx-border-color: #5C95FF; -fx-background-color: white;" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+         <RadioButton fx:id="cardRadioButton" mnemonicParsing="false" text="Credit/Debit card" textFill="#5c95ff" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="9" />
+         <Button fx:id="rentButton2" cacheShape="false" centerShape="false" disable="true" focusTraversable="false" mnemonicParsing="false" opacity="0.0" prefHeight="27.0" prefWidth="106.0" scaleShape="false" style="-fx-background-color: #5C95FF; -fx-text-fill: white; -fx-background-radius: 3;" text="Rent" textFill="#5c95ff" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+         <ComboBox fx:id="pickUpLocationComboBox" cacheShape="false" centerShape="false" focusTraversable="false" prefHeight="29.0" prefWidth="213.0" promptText="Pick up location" scaleShape="false" style="-fx-border-width: 0 0 1 0; -fx-border-color: #5C95FF; -fx-background-color: white;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+         <Button fx:id="backButton1" cacheShape="false" centerShape="false" focusTraversable="false" mnemonicParsing="false" prefHeight="26.0" prefWidth="104.0" style="-fx-background-color: #5C95FF; -fx-text-fill: white; -fx-background-radius: 3;" text="Back" GridPane.columnIndex="1" GridPane.rowIndex="12">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="rentButton1" cacheShape="false" centerShape="false" focusTraversable="false" mnemonicParsing="false" prefHeight="27.0" prefWidth="106.0" scaleShape="false" style="-fx-background-color: #5C95FF; -fx-text-fill: white; -fx-background-radius: 3;" text="Rent" textFill="#5c95ff" GridPane.columnIndex="2" GridPane.rowIndex="12">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Button>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints halignment="CENTER" />
+            <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+         </rowConstraints>
+      </GridPane>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="280.0" prefWidth="320.0">
+         <children>
+            <AnchorPane fx:id="carDescAnchor" prefHeight="145.0" prefWidth="310.0">
+               <children>
+                  <ImageView fx:id="carUrlImage" fitHeight="104.0" fitWidth="114.0" layoutX="26.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="carBrandLabel" layoutX="159.0" layoutY="25.0" prefHeight="18.0" prefWidth="54.0" textFill="#5c95ff">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="carModelLabel" layoutX="209.0" layoutY="24.0" prefHeight="18.0" prefWidth="100.0" text="carModel" textFill="#5c95ff">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="carNbSeatsLabel" layoutX="150.0" layoutY="46.0" prefHeight="18.0" prefWidth="18.0" textFill="#5c95ff" />
+                  <Label fx:id="carTransTypeLabel" layoutX="200.0" layoutY="46.0" prefHeight="18.0" prefWidth="54.0" textFill="#5c95ff" />
+                  <Label fx:id="carNbSeatsLabel1" layoutX="166.0" layoutY="44.0" prefHeight="18.0" prefWidth="32.0" text="Seats" textFill="#8c8c8c" />
+                  <Label fx:id="carTransTypeLabel1" layoutX="246.0" layoutY="46.0" prefHeight="18.0" prefWidth="72.0" text="Transmission" textFill="#8c8c8c" />
+                  <Line endX="170.79998779296875" endY="-1.52587890625E-5" layoutX="152.0" layoutY="102.0" startX="-121.19999694824219" startY="-1.52587890625E-5" stroke="#a1a1a1" />
+               </children>
+               <padding>
+                  <Insets bottom="5" left="10" right="5" top="10" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane prefHeight="153.0" prefWidth="273.0">
+               <children>
+                  <Label layoutX="29.0" layoutY="13.0" prefHeight="18.0" prefWidth="72.0" text="Description" textFill="#5c95ff">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label fx:id="carDescLabel" alignment="TOP_LEFT" layoutX="42.0" layoutY="30.0" prefHeight="95.0" prefWidth="300.0" textFill="#8c8c8c" />
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="20" left="20" right="20" top="20" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
